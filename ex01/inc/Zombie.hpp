@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lyvan-de <lyvan-de@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 15:55:55 by lyvan-de          #+#    #+#             */
-/*   Updated: 2025/07/16 16:00:28 by lyvan-de         ###   ########.fr       */
+/*   Created: 2025/07/09 16:00:16 by lyvan-de          #+#    #+#             */
+/*   Updated: 2025/07/16 15:53:55 by lyvan-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "inc/Zombie.hpp"
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
-int	main(void) {
-	Zombie *z2 = newZombie("new");
+#include <string>
+
+class	Zombie {
+private:
+	std::string name;
 	
-	Zombie z1("first");
-	z1.announce();
-	z2->announce();
-	delete z2;
-	randomChump("random");
-}
+public:
+	Zombie (void);
+	~Zombie (void);
+	void	announce(void);
+	void	setName(std::string name);
+};
+
+Zombie* zombieHorde( int N, std::string name );
+
+#endif

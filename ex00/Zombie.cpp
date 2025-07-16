@@ -6,7 +6,7 @@
 /*   By: lyvan-de <lyvan-de@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 15:59:02 by lyvan-de          #+#    #+#             */
-/*   Updated: 2025/07/16 15:27:46 by lyvan-de         ###   ########.fr       */
+/*   Updated: 2025/07/16 15:57:10 by lyvan-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Zombie::~Zombie() {
 	std::cout << name << ": is destroyed" << std::endl;
 }
 
-void Zombie::announce(void){
+void Zombie::announce(void) {
 	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
