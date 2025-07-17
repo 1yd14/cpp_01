@@ -6,7 +6,7 @@
 /*   By: lyvan-de <lyvan-de@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:42:18 by lyvan-de          #+#    #+#             */
-/*   Updated: 2025/07/16 17:34:00 by lyvan-de         ###   ########.fr       */
+/*   Updated: 2025/07/17 17:46:37 by lyvan-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 class HumanA {
 	private:
 		std::string name;
-		Weapon weapon;
+		Weapon& weapon;
 	
 	public:
-		HumanA (std::string name, Weapon weapon);
+		HumanA (std::string name, Weapon& weapon);
 		void attack(void);
 };
 
