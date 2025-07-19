@@ -1,0 +1,3 @@
+this is a simple test
+some of the text will be replaced by the program
+let's see if it works!
